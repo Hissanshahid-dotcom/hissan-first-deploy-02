@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5em;
+    /* background-image: linear-gradient( rgb(202, 8, 82),rgb(236, 94, 0) ); */
+}
+/* .bg{
+    background-image:linear-gradient( rgb(202, 8, 82),rgb(236, 94, 0) );
+    height: 50vh;
+}
+.bg img{
+height: 50vh;
+width: 100%;
+} */
+ .bg{
+    background-image: linear-gradient(rgb(202, 8, 82), rgb(236, 94, 0));
+    min-height: 100vh;
+}
+
+.bg img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ .bgs{
+    background-image: linear-gradient(rgb(202, 8, 82), rgb(236, 94, 0));
+    min-height: 100vh;
+}
+
+.bgs img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.col{
+    background-color: crimson;
+}
+h3{
+    font-size: 20px;
+    color: rgb(154, 12, 41);
+}
+.h1{
+    /* display: flex;
+    align-self: center; */
+    
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.direct{
+    justify-self: center;
+    /* text-align: center; */
+    flex-direction: column;
+}
+
+.bd-logo img{
+    max-width: 100%;
+    height: auto;
+    /* position: relative; */
+    /* bottom: 16em; */
+}
+
+.header img{
+    margin-right: 22em;
+}
+.marg-bg{
+    margin-top: 5em;
+}
+span{
+    color: #fead6d;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 3em;
+}
+.direct p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+}
+ img{
+width: 7em;
+}
+.box{
+    /* border: 2px solid black; */
+    margin-top: 2em;
+    height: 5em;
+    width: 10em;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    color: #fead6d;
+}
+.sec{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+.direct button{
+     padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-image: linear-gradient( rgb(213, 14, 103),rgb(211, 119, 5) );
+    border-radius: 0em 3em 0em 3em;
+    color: white;
+    border: none;
+    margin-top: 2em;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(crimson,rgb(213, 116, 4));
+}
+.btn{
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-image: linear-gradient( rgb(213, 14, 103),rgb(211, 119, 5) );
+    border-radius: 0em 3em 0em 3em;
+    color: white;
+    border: none;
+}
+.header{
+    display: flex;
+}
+ul{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+}
+.animated-img {
+  width: 300px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-20px); } /* ऊपर move */
+  100% { transform: translateY(0px); }
+}
+
+@media  screen and (max-width:992px){
+    /* header{
+        width: 100%;
+        overflow-x: hidden;
+    } */
+    html, body{
+    overflow-x: hidden;
+}
+
+    .h1{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 3em;
+        overflow-x: hidden;
+    }
+    .bd-logo{
+        background-color: #ff6753;
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px){
+      html, body{
+    overflow-x: hidden;
+}
+
+    .h1{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 3em;
+        overflow-x: hidden;
+    }
+    .bd-logo{
+        background-color: #ff6753;
+        flex-direction: column;
+    }
+    /* .direct{
+        margin-left: 1em;
+        margin-right: 1em;
+    } */
+  .h1{
+    margin-left: 1em;
+        margin-right: 1em;
+        
+  }
+}
+/* @media only screen and  (min-width: 1200px){
+    .direct{
+        font-size: 2em;
+        margin-top: 5em;
+    }
+    .responsive{
+        font-size: 1em;
+    }
+    .direct :nth-child(5){
+        font-size: xx-large;
+    }
+    .direct :nth-child(6){
+        font-size: xx-large;
+    }
+    .direct :nth-child(7){
+        font-size: xx-large;
+    }
+    .resp{
+        font-size: 3em;
+
+    }
+    .repo{
+        font-size: xx-large;
+
+    }
+    .box{
+        font-size: xx-large;
+    }
+    .dir{
+        justify-content: center;
+    }
+} */
